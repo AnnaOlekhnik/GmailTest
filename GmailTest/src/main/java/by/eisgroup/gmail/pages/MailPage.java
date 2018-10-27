@@ -30,7 +30,7 @@ public class MailPage extends AbstractPage {
 	@FindBy(xpath = "//*[@class='Am Al editable LW-avf']")
 	private WebElement messageField;
 
-	@FindBy(xpath = "//div[text()='Отправить']")
+	@FindBy(xpath="//*[contains(@class,'aoO')]")
 	private WebElement sendButton;
 
 	@FindBy(xpath= "//*[@class='bAq']")
@@ -42,7 +42,6 @@ public class MailPage extends AbstractPage {
 	@FindBy(xpath = "//div[contains(@class,'nX')]/div")
 	private WebElement deleteButton;
 
-	
 	public MailPage(WebDriver driver) {
 		super(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -103,4 +102,5 @@ public class MailPage extends AbstractPage {
 		return infoTable;	
 	}
 
+	
 }
