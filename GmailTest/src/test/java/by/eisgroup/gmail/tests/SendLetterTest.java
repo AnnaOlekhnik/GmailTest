@@ -11,7 +11,6 @@ public class SendLetterTest extends BaseTest {
 		steps.authorize("annaolekhniktest@gmail.com", "1q_2w3e4r");
 		steps.sendLetter("annaolekhniktest@gmail.com","Hello","Text of the message");
 		String sendingInfo = steps.verifyLetterWasSent();
-		System.out.println(sendingInfo);
-		Assert.assertEquals(sendingInfo, "Письмо отправлено.");
+		Assert.assertEquals(sendingInfo, "Message sent.");
 	}
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SimpleSuite" verbose="1">
+	<test name="GmailTest">
+		<classes>
+			<class name="by.eisgroup.gmail.tests.LoginTest" />
+			<class name="by.eisgroup.gmail.tests.RemovalLetterTest" />
+			<class name="by.eisgroup.gmail.tests.SendLetterTest" />
+		</classes>
+	</test>
+
+</suite>

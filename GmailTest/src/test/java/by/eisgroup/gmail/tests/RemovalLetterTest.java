@@ -10,7 +10,8 @@ public class RemovalLetterTest extends BaseTest {
 		
 		steps.authorize("annaolekhniktest@gmail.com", "1q_2w3e4r");
 		steps.removeLetter();
-		Assert.assertEquals(steps.verifyLetterWasRemoved(), "Цепочка помещена в корзину.");
+		String actualResult = steps.verifyLetterWasRemoved();
+		Assert.assertEquals(actualResult, "Conversation moved to Trash.");
 	}
 
 }
